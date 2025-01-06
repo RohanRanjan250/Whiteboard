@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .writing{
+            width: 1300px;
+            height: 790px;
+            box-shadow: 10px 5px 10px 5px;
+        }
+        body{
+            display: flex;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <button class="pen tool">Pencil</button>
+        <button class="eraser tool">Earser</button>
+        <button class="clear tool">Clear</button>
+        <input type="color" class="clr">
+        <input type="range" class="range" min="1" max="10" value="3">
+    </div>
+    <div>
+        <div class="writing">
+            <canvas class="writing"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
